@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="StyleQuestion4.css">
+<head>
+
+    <title>Question4</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1  >Topic : Matrices </h1>
+            <h1 id="scoreTracker"> Score : </h1>
+        </div>
+
+        <div class="Question">
+
+            <h1 id="questionTitle">
+                Click Start To Begin
+            </h1>
+
+            <div >
+                <img onclick="randomQuestionPicker()" id="questionPlacement" src="/Topic1/Topic1-Images/start.png.png">
+            </div>
+
+        </div>
+        
+        <div class="Question-Choice">
+            <div id="row1">
+
+                <button id="option1"  onclick="button1();answerChecker(1);randomQuestionPicker();">
+                    Welcome
+                </button>
+
+                <button id="option2"  onclick="button2();answerChecker(2);randomQuestionPicker();">
+                    To
+                </button>
+
+            </div>
+
+            <div id="row2">
+                <button id="option3"  onclick="button3();randomQuestionPicker();answerChecker(3);">
+                    The
+                </button>
+
+                <button id="option4"  onclick="button4();randomQuestionPicker();answerChecker(4);">
+                    Game
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="ScriptQuestion4.js"></script>
+    
+</body>
+</html>

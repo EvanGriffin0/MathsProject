@@ -1,0 +1,76 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+  
+*{
+    background-color: rgb(101, 69, 119);
+
+}
+
+
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.4fr 1.2fr 1.2fr 1.2fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Header Header Header"
+      "button11 button12 button13"
+      "button21 button22 button23"
+      "button31 button32 button33";
+    text-align: center;
+    
+  }
+  
+  .Header {
+     grid-area: Header;
+     text-align: center;
+     font-size: 60px;
+     font-family: 'Oswald', sans-serif;
+     color:white;
+     text-shadow:20px ;
+}
+
+.allButtons{
+  color:white;
+
+  --box-shadow-cover:rgb(0, 0, 0);
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 300px;
+    height: 150px;
+    font-family: 'Oswald', sans-serif;
+    background-color: darkgray;
+    font-size: 25px;
+    box-shadow: 20px 20px 30px 0px var(--box-shadow-cover);
+    border-radius: 10px 10px 10px 10px;
+}
+
+.allButtons:hover{
+    color:black;
+    --box-shadow-cover:white;
+    background-color: white;
+    font-family: 'Oswald', sans-serif;
+    box-shadow: 0px 0px 20px 20px var(--box-shadow-cover); 
+    
+}
+
+  .button11 { grid-area: button11; }
+  
+  .button12 { grid-area: button12; }
+  
+  .button13 { grid-area: button13; }
+  
+  .button21 { grid-area: button21; }
+  
+  .button22 { grid-area: button22; }
+  
+  .button23 { grid-area: button23; }
+  
+  .button31 { grid-area: button31; }
+  
+  .button32 { grid-area: button32; }
+  
+  .button33 { grid-area: button33; }
+  

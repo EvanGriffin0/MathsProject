@@ -1,0 +1,61 @@
+    document.getElementById("scoreTracker").innerHTML="Score : "+scoreCounter;
+
+    function answerChecker(){
+        switch(random1){
+    
+            case 0:
+                if(optionOne==1){
+                    updateScore();
+                    
+                }
+                else{
+                    alert("incorrect");
+                }
+            break;
+            case 1:
+                if(option3==1){
+                    updateScore();
+                }
+                else{
+                    alert("incorrect");
+                }
+            break;
+            case 2:
+                if(option2==1){
+                    updateScore();
+                }
+                else{
+                    alert("incorrect");
+                }
+            break;
+    
+            case 4:
+                if(option4==1){
+                    updateScore();
+                }
+                else{
+                    alert("incorrect");
+                }
+            break;
+    
+        }
+        document.getElementById("scoreTracker").innerHTML="Score : "+scoreCounter;
+        
+    }
+
+
+
+    function optionOne(){
+        option1 =1;
+    }
+    function optionTwo(){
+        option2 =1;
+    }
+    function optionThree(){
+        option3 =1;
+    }
+    function optionFour(){
+        option4 =1;
+    }
+    
+    
